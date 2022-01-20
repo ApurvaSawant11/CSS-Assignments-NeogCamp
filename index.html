@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>CSS Assignments</title>
+</head>
+<body>
+
+  <section class="component">
+    <div class="card-container">
+      <div class="card-details">
+        <div class="card-image">
+          <img src="https://picsum.photos/110"/>
+        </div>
+        <div class="card-title">
+          <h2>Our Changing Planet</h2>
+          <p class="author">By Kurt Wagner</p>
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="card-buttons">
+          <button>Read</button>
+          <button>Bookmark</button>
+        </div>
+        <div  class="card-icons">
+          <i class="far fa-heart fa-lg"></i>
+          <i class="fas fa-share-alt fa-lg"></i>
+          <i class="fas fa-ellipsis-v fa-lg" id="more"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------- Chips ------------------------------ -->
+
+  <section class="component">
+    <div class="chips-container">
+      <div class="chip">Jasmine <i class="fas fa-times"></i></div>
+      <div class="chip">Lily <i class="fas fa-times"></i></div>
+      <div class="chip">Rose <i class="fas fa-times"></i></div>
+      <div class="chip">Aster <i class="fas fa-times"></i></div>
+      <div class="chip">Hibiscus <i class="fas fa-times"></i></div>
+      <div class="chip">Tulip <i class="fas fa-times"></i></div>
+      <div class="chip">Marigold <i class="fas fa-times"></i></div>
+      <div class="chip">Lotus <i class="fas fa-times"></i></div>
+      <div class="chip">Dandelion <i class="fas fa-times"></i></div>
+    </div>
+  </section>
+
+  <!-- ----------------------Drawer Component -------------------------- -->
+
+  <div class="App">
+    <div class="drawer-container">
+      <h3>Title</h3>
+      <p class="subtitle">subtitle</p>
+      <div class="list">
+        <ul class="list-style">
+          <li class="list-item active">
+            <i class="fas fa-inbox fa-lg drawer-icon"></i> Inbox
+          </li>
+          <li class="list-item">
+            <i class="fas fa-star fa-lg drawer-icon"></i> Star
+          </li>
+          <li class="list-item">
+            <i class="fas fa-paper-plane fa-lg drawer-icon"></i>Sent Mail
+          </li>
+          <li class="list-item">
+            <i class="fas fa-envelope-open fa-lg drawer-icon"></i> Drafts
+          </li>
+          <li class="list-item nested">
+            <i class="fas fa-tag  fa-flip-horizontal fa-lg drawer-icon"></i> Categories
+            <div class="chevron-buttons">
+              <i class="fas fa-chevron-down dropdown"></i>
+              <i class="fas fa-chevron-up up"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------------Top App Bar --------------------------- -->
+
+  <section class="component">
+    <div class="nav-bar">  
+    <header>
+        <section class="hero-section"><i class="fas fa-bars"></i>Mary go round!</section>
+        <section class="hero-section">
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-user"></i>
+        </section>
+    </header>
+    <main>
+      <!-- <a href="./fixed.html">Fixed</a> -->
+      <p class="dummy-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione debitis. Dolorem laborum at enim, animi ratione ab voluptatem soluta amet deleniti, minima expedita. Porro ab vero beatae sint expedita!</p>
+      <!-- <p class="dummy-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At doloremque molestias laudantium corporis cupiditate earum explicabo, in non quos quas exercitationem fugiat doloribus nemo amet omnis culpa vel eveniet! Nostrum!</p>
+      <p class="dummy-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odit error itaque officia quod neque assumenda nulla fugiat doloribus fugit, facere repudiandae beatae a molestias quasi amet ad minima tenetur?</p>
+      <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ullam adipisci doloremque eveniet exercitationem earum dolorem laborum, facilis corporis dolor placeat unde eum hic dignissimos, architecto iure a natus fuga!</p> -->
+          <!-- <p class="dummy-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis officiis temporibus culpa aliquid perspiciatis fugit nostrum est? Aliquid soluta distinctio, suscipit velit consequatur at adipisci hic dolorem doloribus deserunt! Aperiam.</p>
+          <p class="dummy-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ratione debitis. Dolorem laborum at enim, animi ratione ab voluptatem soluta amet deleniti, minima expedita. Porro ab vero beatae sint expedita!</p>
+          <p class="dummy-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At doloremque molestias laudantium corporis cupiditate earum explicabo, in non quos quas exercitationem fugiat doloribus nemo amet omnis culpa vel eveniet! Nostrum!</p>
+          <p class="dummy-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odit error itaque officia quod neque assumenda nulla fugiat doloribus fugit, facere repudiandae beatae a molestias quasi amet ad minima tenetur?</p> -->
+      </main>
+    </div>
+  </section>
+
+  <!-- --------------------------- Badges --------------------------- -->
+
+  <section class="component">
+    <div class="badge-container">
+      <p><span class="badge-text">Text with a badge<span class="badge-value">7</span></span></p>
+      <p><span class="badge-text large">Text with a large badge<span class="badge-value">7</span></span></p>
+      <p>Button with a badge on left <button class="badge-btn">Button <span class="badge-value badge-on-left">7</span></button></p>
+      <p>Button toggles badge visibility <button class="badge-btn">Hide<span class="badge-value">7</span></button></p>
+      <p>Icon with a badge <i class="fas fa-bell fa-lg badge-icon
+        -btn"><span class="badge-value">7</span></i></p>
+    </div>
+  </section>
+
+  <!-- ------------------------ Snackbar ----------------------------- -->
+
+  <section class="component">
+    <div class="snackbar-container">
+      <div class="sb-label">Can't send photo. Retry in  5 seconds.</div>
+      <div class="sb-buttons">
+        <button id="retry-btn">Retry</button>
+        <button><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------- Dialog box ----------------------------- -->
+  <section class="component">
+    <div class="dialog-container">
+      <h2>Dialog Header</h2>
+      <div class="dialog-text">Dialog body text</div>
+      <div class="dialog-buttons">
+        <button>Action 1</button>
+        <button>Action 2</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------ Tabs ---------------------------------  -->
+  <section class="component">
+    <div class="tab-container">
+      <button>Tab 1</button>
+      <button>Tab 2</button>
+      <button>Tab 3</button>
+      <button>Tab 4</button>
+    </div>
+  </section>
+  
+  
+  <script src="src/index.js"></script>
+</body>
+</html>

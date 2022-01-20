@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #6200ee;
+  --background-color: #e7e7e7;
+  --background-color-gray: #eeeded;
+  --light-gray: #6e6e6e;
+  --hover-color: #e6e6e665;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  word-spacing: 1px;
+}
+
+.component {
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  /* background-color: var(--white); */
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* || ----------------------------Card Component ------------------------ */
+h2 {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.author {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  color: var(--light-gray);
+  letter-spacing: 0px;
+}
+
+.card-container {
+  background-color: var(--white);
+  display: flex;
+  flex-flow: column wrap;
+  /* width: 25rem; */
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 1px #acacac;
+}
+
+.card-details {
+  display: flex;
+  background-color: var(--background-color-gray);
+}
+
+.card-image img {
+  border-radius: 5px 5px 0 0;
+  height: 100%;
+}
+
+.card-title {
+  padding: 1rem 0 0 1rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  /* font-size: 1.5rem; */
+}
+
+.card-buttons button {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.card-buttons button:hover {
+  background-color: var(--hover-color);
+}
+
+.card-icons i {
+  border-radius: 50%;
+  color: var(--light-gray);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.card-icons i:hover {
+  background-color: var(--hover-color);
+}
+
+#more {
+  padding: 1rem 1.4rem;
+}
+
+
+/* || ------------------------------- Chips ------------------------------*/
+
+.chips-container {
+  background-color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.chip {
+  background-color: var(--background-color-gray);
+  border-radius: 3rem;
+  font-size: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.chip i {
+  background-color: #bdbdbd;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.2rem 0.3rem;
+}
+
+.chip:hover {
+  filter: brightness(0.9);
+}
+
+/* || -------------------------- Drawer Component ----------------------- */
+
+.App {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawer-container {
+  background-color: white;
+  border-radius: 2px;
+  padding: 1rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  color: #5f5f5f;
+  font-size: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.list-item {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0.8rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.list-item:hover {
+  background-color: #e7e7e765;
+}
+
+
+.drawer-icon {
+  margin-right: 1rem;
+}
+
+.chevron-buttons {
+  margin-left: auto;
+}
+
+.list-item.active {
+  color: var(--primary-color);
+  background-color: #6200ee21;
+}
+
+.list-item chevron-buttons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2.4em;
+  right: 2em;
+  cursor: pointer;
+  font-size: 0.8em;
+  border: unset;
+  background-color: transparent;
+}
+
+.fa-chevron-up,
+.nested-items {
+  display: none;
+}
+
+.list-item.active .fa-chevron-up {
+  display: block;
+}
+
+.list-item.active .fa-chevron-down {
+  display: none;
+}
+
+/* || ------------------------------ Top App Bar ------------------------ */
+
+.nav-bar {
+  background-color: var(--white);
+}
+
+header {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.hero-section i {
+  padding-right: 1rem;
+}
+
+.hero-section {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.dummy-text {
+  padding: 3rem 2rem;
+}
+
+/* */
+
+
+.fixed-nav {
+  position: fixed;
+  width: 100%;
+}
+
+/* || ---------------------------Badges --------------------------------- */
+
+.badge-container {
+  background-color: var(--white);
+  padding: 2rem 0 2rem 3rem;
+  width: 25rem;
+  font-size: 1.1rem;
+}
+
+.badge-container p {
+  padding: 0.5rem 0;
+}
+
+.badge-icon,
+.badge-btn,
+.badge-text {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge-value {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: var(--white);
+  padding: 0.1rem 0.4rem;
+  font-size: 1rem;
+}
+
+.badge-value {
+  position: absolute;
+  top: -0.8rem;
+}
+
+.badge-btn {
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+.badge-icon .badge-value {
+  right: -0.8rem;
+  top: -1rem;
+}
+
+.badge-on-left {
+  left: -1rem;
+}
+
+/* || -------------------------- Snackbar ----------------------------  */
+
+.snackbar-container {
+  background-color: #242424;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* width: 27rem; */
+}
+
+.sb-buttons button {
+  color: white;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+#retry-btn {
+  color: #8e3dff;
+  font-size: 1rem;
+}
+
+/* || --------------------------- Dialog box -------------------------- */
+
+.dialog-container {
+  background-color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 17rem;
+  padding: 1.5rem;
+}
+
+.dialog-text {
+  padding: 1.3rem 0;
+  color: var(--light-gray);
+  font-size: 1.1rem;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.dialog-buttons button {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.dialog-buttons button:hover {
+  background: var(--hover-color);
+}
+
+/* || ---------------------------- Tabs ------------------------------ */
+
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  padding: 1rem;
+  background-color: var(--white);
+  /* width: 25rem; */
+}
+
+.tab-container button {
+  border-radius: 0;
+  padding: 1rem 3rem;
+}
+
+.tab-container button:hover {
+  background-color: var(--hover-color);
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
